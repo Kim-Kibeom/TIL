@@ -21,3 +21,19 @@
   - git reset --hard Head [filename] -> Index와 working directory도 이전 커밋으로 모두 이동
     - working directory 내용을 커밋 하지 않고 git reset -hard 사용하면 내용이 날아가게 됨 (주의할 것)
       ![exmaple-stagingHard](./images/staging-hard.png)
+
+## Moving Files
+
+- mv video/play.md website + git add
+- git mv video/play.md website
+  - git mv [from] [to] 를 통해 파일 이동이 가능하다.
+
+## Deleting Files
+
+- rm articles/live.md + git add articles/live.md
+- git rm articles/live.md
+
+## Restoring Deleted Files
+
+- git reset HEAD articles/live.md ; staging area 복원
+- git checkout HEAD articles/live.md ; file 복원
