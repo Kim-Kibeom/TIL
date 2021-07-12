@@ -14,3 +14,12 @@
   - rebase : 변화를 선형적으로 그룹짓고 싶을 때 / 지저분하게 local commit이 있을 때 / 팀이 히스토리 그래프를 자주 사용할 때
 
     - 참고 : https://velog.io/@kwonh/Git-Rebase%EB%9E%80
+
+- interactive rebase
+  - 과거 커밋에 오타가 있을 때
+  - 테스트용 커밋이 딸려 들어갔을 때
+  - 비슷한 커밋이 두 개로 분리되어 있어서 이것들을 합치고 싶을 때
+  - 이때 --interactive 옵션을 사용할 수 있음 ( -i 옵션)
+    - git rebase -i {수정할 커밋의 직전 커밋}
+    - 이후 vi 에디터를 통해 사용할 수 있는 명령어들을 확인할 수 있음
+    - ![interactive-rebase](./images/inter-rebase.png)
